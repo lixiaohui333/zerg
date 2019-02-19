@@ -13,5 +13,5 @@
 use think\Route;
 
 Route::get('api/v1/banner','api/v1.Banner/getBanner');
-Route::post('api/v1/address','api/v1.Address/addAddress');
+//Route::post('api/v1/address','api/v1.Address/addAddress');
 

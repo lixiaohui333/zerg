@@ -9,7 +9,7 @@
 namespace app\validate;
 
 
-use think\Exception;
+use app\lib\exception\ParameterException;
 use think\Request;
 use think\Validate;
 
@@ -25,7 +25,7 @@ class BaseValidate extends Validate
         $params = $request->param();
 //        $params['token']
         if(!$this->check($params)){
-            throw new Exception($this->error);
+            throw new ParameterException();
         }
 
         return true;
